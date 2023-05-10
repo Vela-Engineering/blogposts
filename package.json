@@ -1,5 +1,5 @@
 {
-  "name": "outstatic-blog-example",
+  "name": "vela-blog",
   "private": true,
   "scripts": {
     "dev": "next",
