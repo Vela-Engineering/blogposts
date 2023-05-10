@@ -1,6 +1,6 @@
 ---
 title: 'Test Post'
-status: 'draft'
+status: 'published'
 author:
   name: 'Ephraim Atta-Duncan'
   picture: 'https://avatars.githubusercontent.com/u/55143799?v=4'
@@ -10,7 +10,7 @@ coverImage: 'https://images.unsplash.com/photo-1683565729190-45524927f64d?ixlib=
 publishedAt: '2023-05-10T22:48:19.000Z'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent** a massa sodales, e**fficitur nunc vitae, aliquam lorem. Nulla et vehicula mauris. Phasellus maximus feugiat turpis, at finibus lorem rhoncus ut. Sed hendrerit ullamcorper odio sit amet imperdiet. Phasellus in felis fringilla, bibendum sem id, ve*hicula urna*. Nulla nisi leo, pretium quis mi malesuada, dictum consectetur nisi. Sed tristique nisi a ipsum efficitur, vitae semper velit sodales. Nulla laoreet tortor non nisl aliquet, et aliquet est interdum. Suspendisse volutpat semper neque, vitae porta turpis vestibulum eget. Aliquam mattis arcu ut eros luctus, vitae consequat turpis tincidunt. In in tempus quam, at euismod nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec consectetur non nulla in elementum. Maecenas a sem ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin cursus pretium vestibulum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent\*\* a massa sodales, e\**fficitur nunc vitae, aliquam lorem. Nulla et vehicula mauris. Phasellus maximus feugiat turpis, at finibus lorem rhoncus ut. Sed hendrerit ullamcorper odio sit amet imperdiet. Phasellus in felis fringilla, bibendum sem id, ve*hicula urna\*. Nulla nisi leo, pretium quis mi malesuada, dictum consectetur nisi. Sed tristique nisi a ipsum efficitur, vitae semper velit sodales. Nulla laoreet tortor non nisl aliquet, et aliquet est interdum. Suspendisse volutpat semper neque, vitae porta turpis vestibulum eget. Aliquam mattis arcu ut eros luctus, vitae consequat turpis tincidunt. In in tempus quam, at euismod nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec consectetur non nulla in elementum. Maecenas a sem ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin cursus pretium vestibulum.
 
 > Exert
 
