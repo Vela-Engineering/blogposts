@@ -8,10 +8,9 @@ import markdownToHtml from "../lib/markdownToHtml";
 type Props = {
   page: Document;
   allPosts: Document[];
-  allProjects: Document[];
 };
 
-export default function Index({ page, allPosts, allProjects }: Props) {
+export default function Index({ page, allPosts }: Props) {
   return (
     <>
       <Layout>
@@ -24,13 +23,6 @@ export default function Index({ page, allPosts, allProjects }: Props) {
           </section>
           {allPosts.length > 0 && (
             <ContentGrid title="Posts" items={allPosts} collection="posts" />
-          )}
-          {allProjects.length > 0 && (
-            <ContentGrid
-              title="Projects"
-              items={allProjects}
-              collection="projects"
-            />
           )}
         </div>
       </Layout>
@@ -50,11 +42,9 @@ export const getStaticProps = async () => {
     "author",
   ]);
 
-  const allProjects = getDocuments("projects", ["title", "slug", "coverImage"]);
-
   const content = await markdownToHtml(page.content || "");
 
   return {
-    props: { page: { content }, allPosts, allProjects },
+    props: { page: { content }, allPosts },
   };
 };
