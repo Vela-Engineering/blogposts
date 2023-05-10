@@ -1,22 +1,33 @@
-import type { Document } from '../interfaces/document'
-import Link from 'next/link'
-import DateFormatter from './DateFormatter'
-import Image from 'next/image'
+import type { Document } from "../interfaces/document";
+import Link from "next/link";
+import DateFormatter from "./DateFormatter";
+import Image from "next/image";
+import HeroPost from "./blog/HeroPost";
 
 type Props = {
-  collection: 'posts' | 'projects'
-  title?: string
-  items: Document[]
-}
+  collection: "posts" | "projects";
+  title?: string;
+  items: Document[];
+};
 
-const ContentGrid = ({ title = 'More', items, collection }: Props) => {
+const ContentGrid = ({ items, collection }: Props) => {
+  const [heroPost, ...morePosts] = items || [];
+
   return (
     <section id={collection}>
-      <h2 className="mb-8 text-5xl md:text-6xl font-bold tracking-tighter leading-tight">
-        {title}
-      </h2>
+      {heroPost && (
+        <HeroPost
+          title={heroPost.title}
+          coverImage={heroPost.coverImage}
+          date={heroPost.publishedAt}
+          author={heroPost.author}
+          slug={heroPost.slug}
+          description={heroPost.description}
+        />
+      )}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-6 lg:gap-x-8 gap-y-5 sm:gap-y-6 lg:gap-y-8 mb-8">
-        {items.map((item) => (
+        {morePosts.map((item) => (
           <Link
             key={item.slug}
             as={`/${collection}/${item.slug}`}
@@ -31,13 +42,13 @@ const ContentGrid = ({ title = 'More', items, collection }: Props) => {
                   width={347}
                   height={192}
                 />
-                {collection === 'projects' && (
+                {collection === "projects" && (
                   <h2 className="p-2 bg-opacity-80 bg-white text-center whitespace-nowrap font-bold text-3xl absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 shadow-lg rounded-lg">
                     {item.title}
                   </h2>
                 )}
               </div>
-              {collection === 'posts' && (
+              {collection === "posts" && (
                 <div className="p-4">
                   <h3 className="text-xl mb-2 leading-snug font-bold hover:underline">
                     {item.title}
@@ -55,7 +66,7 @@ const ContentGrid = ({ title = 'More', items, collection }: Props) => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContentGrid
+export default ContentGrid;

@@ -1,20 +1,16 @@
 const Footer = () => {
   return (
     <footer className="bg-neutral-50 border-t border-neutral-200">
-      <div className="max-w-6xl mx-auto px-5 p-10">
-        <h3 className="font-semibold text-2xl mb-10 lg:mb-0 lg:pr-4">
-          Sample website built with{' '}
+      <div className="max-w-5xl mx-auto px-5 py-5">
+        <h3 className="font-semibold text-base mb-10 lg:mb-0 lg:pr-4">
+          A blog by{" "}
           <a className="underline" href="https://outstatic.com/">
-            Outstatic
-          </a>{' '}
-          and{' '}
-          <a className="underline" href="https://nextjs.org/">
-            Next.js
+            Vela Partners
           </a>
         </h3>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
