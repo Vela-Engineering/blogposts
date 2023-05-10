@@ -10,8 +10,7 @@ coverImage: ''
 publishedAt: '2022-03-17T05:35:07.322Z'
 ---
 
-## Hello!
+# Vela Partners Blog
 
-# I'm Andre, nice to meet you.
+The AI Investor
 
-I am a surfer + musician + software developer + designer + online marketer and whatever else I can cram into this existence.
