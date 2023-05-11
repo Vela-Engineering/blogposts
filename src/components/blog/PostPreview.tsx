@@ -1,4 +1,3 @@
-import { Document } from "outstatic";
 import Avatar from "./AuthorAvatar";
 import CoverImage from "./CoverImage";
 import Date from "./PostDate";
@@ -22,7 +21,7 @@ export default function PostPreview({
           priority={false}
         />
       </div>
-      <h3 className="mb-3 text-3xl leading-snug">
+      <h3 className="mb-3 text-vela text-3xl leading-snug">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
@@ -31,7 +30,7 @@ export default function PostPreview({
         <Date dateString={publishedAt} />
       </div>
       {description && (
-        <p className="mb-4 text-lg leading-relaxed">{description}</p>
+        <p className="mb-4 text-lg leading-relaxed opacity-60">{description}</p>
       )}
       {author && <Avatar name={author.name} picture={author.picture} />}
     </div>

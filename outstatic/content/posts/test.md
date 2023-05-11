@@ -1,13 +1,13 @@
 ---
-title: 'Test Post'
-status: 'published'
+title: "Test Post"
+status: "published"
 author:
-  name: 'Ephraim Atta-Duncan'
-  picture: 'https://avatars.githubusercontent.com/u/55143799?v=4'
-slug: 'test'
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a massa sodales, efficitur nunc vitae, aliquam lorem. Nulla et vehicula mauris. Phasellus maximus feugiat turpis, at finibus lorem rhoncus ut. '
-coverImage: 'https://images.unsplash.com/photo-1683565729190-45524927f64d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-publishedAt: '2023-05-10T22:48:19.000Z'
+  name: "Ephraim Atta-Duncan"
+  picture: "https://avatars.githubusercontent.com/u/55143799?v=4"
+slug: "test"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a massa sodales, efficitur nunc vitae, aliquam lorem."
+coverImage: "https://images.unsplash.com/photo-1683565729190-45524927f64d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+publishedAt: "2023-05-10T22:48:19.000Z"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent\*\* a massa sodales, e\**fficitur nunc vitae, aliquam lorem. Nulla et vehicula mauris. Phasellus maximus feugiat turpis, at finibus lorem rhoncus ut. Sed hendrerit ullamcorper odio sit amet imperdiet. Phasellus in felis fringilla, bibendum sem id, ve*hicula urna\*. Nulla nisi leo, pretium quis mi malesuada, dictum consectetur nisi. Sed tristique nisi a ipsum efficitur, vitae semper velit sodales. Nulla laoreet tortor non nisl aliquet, et aliquet est interdum. Suspendisse volutpat semper neque, vitae porta turpis vestibulum eget. Aliquam mattis arcu ut eros luctus, vitae consequat turpis tincidunt. In in tempus quam, at euismod nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec consectetur non nulla in elementum. Maecenas a sem ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin cursus pretium vestibulum.
@@ -23,4 +23,3 @@ Nullam turpis tellus, sagittis id diam vitae, suscipit feugiat urna. Ut dignissi
 Proin non tellus fermentum, tristique metus tempus, finibus diam. Nulla laoreet, tellus placerat sagittis vestibulum, lectus tellus aliquet velit, nec porttitor neque erat quis lacus. Sed volutpat pulvinar luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse rhoncus, ex ut condimentum mattis, nisi orci sagittis velit, at aliquet nibh lorem sit amet sem. In ac molestie leo. Aliquam nec sapien et nibh pellentesque porta. Pellentesque arcu lacus, bibendum a risus eget, blandit lobortis risus. Phasellus urna justo, mattis eu placerat ac, venenatis id neque. Fusce magna sem, euismod vitae consequat eu, lacinia non justo. Nunc dignissim arcu libero, in elementum nulla condimentum eu. Vivamus accumsan congue magna, ullamcorper interdum velit laoreet nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ullamcorper a orci ut elementum.
 
 <br>
-

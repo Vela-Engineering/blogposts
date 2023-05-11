@@ -13,7 +13,7 @@ export default function HeroPost(props) {
       </div>
       <div className="mb-20 md:mb-28 md:grid md:grid-cols-5 lg:gap-x-8">
         <div className="md:col-span-3">
-          <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
+          <h3 className="mb-4 text-vela text-4xl leading-tight lg:text-6xl">
             <Link href={`/posts/${slug}`} className="hover:underline">
               {title || "Untitled"}
             </Link>
@@ -24,7 +24,9 @@ export default function HeroPost(props) {
         </div>
         <div className="flex flex-col justify-between md:col-span-2">
           {description && (
-            <p className="mt-2 mb-4 text-xl leading-relaxed">{description}</p>
+            <p className="opacity-60 mt-2 mb-4 text-xl leading-relaxed">
+              {description}
+            </p>
           )}
           {author && (
             <AuthorAvatar name={author.name} picture={author.picture} />

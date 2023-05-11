@@ -1,12 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
+    <footer className="border-t border-gray-900">
       <div className="max-w-5xl mx-auto px-5 py-5">
-        <h3 className="font-semibold text-base mb-10 lg:mb-0 lg:pr-4">
-          A blog by{" "}
-          <a className="underline" href="https://outstatic.com/">
-            Vela Partners
-          </a>
+        <h3 className="font-semibold text-base lg:mb-0 lg:pr-4">
+          © 2023 <a href="https://vela.partners/">Vela Partners</a>
         </h3>
       </div>
     </footer>

@@ -34,7 +34,7 @@ export default function Post({ post }: Props) {
                 <title>{`${post.title} | Vela Partners Blog`}</title>
                 <meta property="og:image" content={post.coverImage} />
               </Head>
-              <h1 className="mb-12 text-center text-6xl font-bold leading-tight tracking-tighter md:text-left md:text-7xl md:leading-none lg:text-8xl">
+              <h1 className="mb-12 text-vela text-6xl font-bold leading-tight tracking-tighter md:text-left md:text-7xl md:leading-none lg:text-8xl">
                 {post.title}
               </h1>
               <div className="hidden md:mb-12 md:block">
@@ -71,7 +71,7 @@ export default function Post({ post }: Props) {
 
               <div className="max-w-2xl mx-auto">
                 <div
-                  className="prose lg:prose-lg"
+                  className="prose lg:prose-lg prose-invert prose-lead:leading-loose prose-h1:text-vela prose-h2:text-vela prose-a:text-vela"
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
               </div>
