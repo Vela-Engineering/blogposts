@@ -1,4 +1,3 @@
-import { Document } from "outstatic";
 import PostPreview from "./PostPreview";
 
 export default function MorePosts({ posts }) {
