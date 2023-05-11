@@ -21,7 +21,7 @@ export default function Post({ post }: Props) {
   }
   return (
     <Layout>
-      <div className="max-w-5xl mx-auto px-5">
+      <div className="max-w-7xl mx-auto px-5">
         <Header />
         {router.isFallback ? (
           <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">

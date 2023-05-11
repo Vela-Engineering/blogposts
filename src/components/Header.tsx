@@ -1,27 +1,15 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const Header = () => {
   return (
-    <nav className="layout flex items-center justify-between py-4">
-      <ul className="flex items-center justify-between space-x-3 text-xs md:space-x-4 md:text-base">
-        <li>
-          <Link href="/" className="hover:underline">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/#posts" className="hover:underline">
-            Posts
-          </Link>
-        </li>
-        <li>
-          <Link href="/#projects" className="hover:underline">
-            Projects
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  )
-}
+    <header>
+      <h2 className="my-12 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
+        <Link href="/" className="hover:underline">
+          Vela Partners Blog
+        </Link>
+      </h2>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
