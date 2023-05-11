@@ -19,7 +19,9 @@ export default function Index({ page, allPosts }: Props) {
         </Head>
         <div className="max-w-5xl mx-auto px-5">
           <section className="mt-16 mb-16 md:mb-12">
-            <h1 className="text-7xl font-bold ">Vela Partners Blog</h1>
+            <h2 className="mb-8 text-6xl font-bold leading-tight tracking-tighter md:text-7xl">
+              Vela Partners Blog
+            </h2>
           </section>
           {allPosts.length > 0 && (
             <ContentGrid title="Posts" items={allPosts} collection="posts" />

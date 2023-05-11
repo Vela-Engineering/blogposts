@@ -1,5 +1,5 @@
 ---
-title: "If you want to make the wrong decision, ask everyone"
+title: "Test 2"
 status: "published"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
 coverImage: "/images/skyline.png"
