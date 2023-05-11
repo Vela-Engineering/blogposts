@@ -1,26 +1,27 @@
-import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
-import Header from '../../components/Header'
-import Layout from '../../components/Layout'
-import Head from 'next/head'
-import markdownToHtml from '../../lib/markdownToHtml'
-import { Document } from '../../interfaces/document'
-import { getDocumentPaths, getDocumentBySlug } from 'outstatic/server'
-import DateFormatter from '../../components/DateFormatter'
-import Image from 'next/image'
+import { useRouter } from "next/router";
+import ErrorPage from "next/error";
+import Header from "../../components/Header";
+import Layout from "../../components/Layout";
+import Head from "next/head";
+import markdownToHtml from "../../lib/markdownToHtml";
+import { Document } from "../../interfaces/document";
+import { getDocumentPaths, getDocumentBySlug } from "outstatic/server";
+import AuthorAvatar from "../../components/blog/AuthorAvatar";
+import CoverImage from "../../components/blog/CoverImage";
+import PostDate from "../../components/blog/PostDate";
 
 type Props = {
-  post: Document
-}
+  post: Document;
+};
 
 export default function Post({ post }: Props) {
-  const router = useRouter()
+  const router = useRouter();
   if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404} />;
   }
   return (
     <Layout>
-      <div className="max-w-6xl mx-auto px-5">
+      <div className="max-w-5xl mx-auto px-5">
         <Header />
         {router.isFallback ? (
           <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">
@@ -30,29 +31,47 @@ export default function Post({ post }: Props) {
           <>
             <article className="mb-32">
               <Head>
-                <title>{`${post.title} | Next.js + Outstatic`}</title>
+                <title>{`${post.title} | Vela Partners Blog`}</title>
                 <meta property="og:image" content={post.coverImage} />
               </Head>
-              <div className="relative mb-2 md:mb-4 sm:mx-0 w-full h-52 md:h-96">
-                <Image
-                  alt={post.title}
-                  src={post.coverImage}
-                  fill
-                  className="object-cover object-center"
-                  priority
-                />
-              </div>
-              <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">
+              <h1 className="mb-12 text-center text-6xl font-bold leading-tight tracking-tighter md:text-left md:text-7xl md:leading-none lg:text-8xl">
                 {post.title}
               </h1>
-              <div className="hidden md:block md:mb-12 text-slate-600">
-                Written on <DateFormatter dateString={post.publishedAt} /> by{' '}
-                {post.author.name}.
+              <div className="hidden md:mb-12 md:block">
+                {post.author && (
+                  <AuthorAvatar
+                    name={post.author.name}
+                    picture={post.author.picture}
+                  />
+                )}
+              </div>
+              <div className="mb-8 sm:mx-0 md:mb-16">
+                <CoverImage
+                  title={post.title}
+                  image={post.coverImage}
+                  priority
+                  slug={post.slug}
+                />
               </div>
               <hr className="border-neutral-200 mt-10 mb-10" />
+
+              <div className="mx-auto max-w-2xl">
+                <div className="mb-6 block md:hidden">
+                  {post.author && (
+                    <AuthorAvatar
+                      name={post.author.name}
+                      picture={post.author.picture}
+                    />
+                  )}
+                </div>
+                <div className="mb-6 text-lg">
+                  <PostDate dateString={post.publishedAt} />
+                </div>
+              </div>
+
               <div className="max-w-2xl mx-auto">
                 <div
-                  className="prose lg:prose-xl"
+                  className="prose lg:prose-lg"
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
               </div>
@@ -61,39 +80,39 @@ export default function Post({ post }: Props) {
         )}
       </div>
     </Layout>
-  )
+  );
 }
 
 type Params = {
   params: {
-    slug: string
-  }
-}
+    slug: string;
+  };
+};
 
 export async function getStaticProps({ params }: Params) {
-  const post = getDocumentBySlug('posts', params.slug, [
-    'title',
-    'publishedAt',
-    'slug',
-    'author',
-    'content',
-    'coverImage'
-  ])
-  const content = await markdownToHtml(post.content || '')
+  const post = getDocumentBySlug("posts", params.slug, [
+    "title",
+    "publishedAt",
+    "slug",
+    "author",
+    "content",
+    "coverImage",
+  ]);
+  const content = await markdownToHtml(post.content || "");
 
   return {
     props: {
       post: {
         ...post,
-        content
-      }
-    }
-  }
+        content,
+      },
+    },
+  };
 }
 
 export async function getStaticPaths() {
   return {
-    paths: getDocumentPaths('posts'),
-    fallback: false
-  }
+    paths: getDocumentPaths("posts"),
+    fallback: false,
+  };
 }
