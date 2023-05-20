@@ -7,7 +7,7 @@ author:
 slug: 'hello-from-yigit'
 description: ''
 coverImage: ''
-publishedAt: '2023-05-20T18:06:11.614Z'
+publishedAt: '2023-05-19T18:06:11.000Z'
 ---
 
 Hello
