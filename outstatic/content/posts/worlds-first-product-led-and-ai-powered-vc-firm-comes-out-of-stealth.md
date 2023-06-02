@@ -6,13 +6,13 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/44022096?v=4'
 slug: 'worlds-first-product-led-and-ai-powered-vc-firm-comes-out-of-stealth'
 description: 'Vela Partners, the world''s first product-led and AI-powered venture capital firm, has emerged from stealth mode with $25 million under management and 32 portfolio companies.'
-coverImage: '/images/team-EyOD.jpg'
+coverImage: ''
 publishedAt: '2023-05-11T21:41:48.000Z'
 ---
 
-\*\*SAN FRANCISCO, May 11, 2023 - \*\*[Vela Partners](https://www.vela.partners/), the world's first product-led and AI-powered venture capital firm, has emerged from stealth mode with $25 million under management and 32 portfolio companies. The company leverages AI algorithms and SaaS tactics to revitalize an industry that is ripe for transformation.
+**SAN FRANCISCO, May 11, 2023** \- [Vela Partners](https://www.vela.partners/), the world's first product-led and AI-powered venture capital firm, has emerged from stealth mode with $25 million under management and 32 portfolio companies. The company leverages AI algorithms and SaaS tactics to revitalize an industry that is ripe for transformation.
 
-"We are thrilled to introduce our proprietary product called 'Ventech' to the world," Yigit Ihlamur, the co-founder and general partner of Vela Partners, said. "It has been developed and fine-tuned over many years by ex-Googlers and University of Oxford researchers, and features sourcing, company evaluation, relationship graph analysis, and market intelligence capabilities. Additionally, we have recently open-sourced more than 20 machine learning models at our [Github repository](https://github.com/velapartners?tab=repositories), complete with research papers, to support the startup ecosystem."
+"We are thrilled to introduce our proprietary product called 'Ventech' to the world." Yigit Ihlamur, the co-founder and general partner of Vela Partners, said. "It has been developed and fine-tuned over many years by ex-Googlers and University of Oxford researchers, and features sourcing, company evaluation, relationship graph analysis, and market intelligence capabilities. Additionally, we have recently open-sourced more than 20 machine learning models at our [Github repository](https://github.com/velapartners?tab=repositories), complete with research papers, to support the startup ecosystem."
 
 To further streamline the process, Vela Partners has created a [game-like terminal](https://www.vela.partners/terminal) to assist entrepreneurs, limited partners, and other VCs in using Ventech. Entrepreneurs can analyze tendencies and fast-growing ideas in developer ecosystems like AWS and GitHub, while whitelisted VCs can identify the hottest seed-stage startups and understand emerging early-stage trends. Limited partners can ask questions using natural language about why Vela invested in a certain startup.
 
