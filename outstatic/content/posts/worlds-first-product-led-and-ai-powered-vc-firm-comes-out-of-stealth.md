@@ -6,7 +6,7 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/44022096?v=4'
 slug: 'worlds-first-product-led-and-ai-powered-vc-firm-comes-out-of-stealth'
 description: 'Vela Partners, the world''s first product-led and AI-powered venture capital firm, has emerged from stealth mode with $25 million under management and 32 portfolio companies.'
-coverImage: ''
+coverImage: '/images/team-kzNz.jpg'
 publishedAt: '2023-05-11T21:41:48.000Z'
 ---
 
